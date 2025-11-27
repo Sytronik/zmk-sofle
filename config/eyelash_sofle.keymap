@@ -67,6 +67,15 @@
         flavor = "balanced";
     };
 
+    lcmd_to_numlayer: lcmd_to_numlayer {
+        compatible = "zmk,behavior-mod-morph";
+        label = "LCMD_TO_NUMLAYER";
+        bindings = <&sk LCMD>, <&to 4>;
+
+        #binding-cells = <0>;
+        mods = <(MOD_LGUI)>;
+    };
+
     behaviors {
     };
 
@@ -159,6 +168,16 @@
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
             label = "win";
+        };
+
+        num {
+            bindings = <
+&trans  &trans     &trans        &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &kp N7        &kp N8  &kp N9  &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp EQUAL  &kp N4        &kp N5  &kp N6  &kp ENTER    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp COMMA  &kp N1        &kp N2  &kp N3  &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp DOT    &kp NUMBER_0  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+            >;
         };
     };
 };
