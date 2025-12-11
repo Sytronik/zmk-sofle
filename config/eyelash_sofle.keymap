@@ -179,7 +179,7 @@
             bindings = <
 &soft_off       &sel_win       &sel1_mac      &sel2_mac      &sel3_ipad     &bt BT_SEL 4     &mmv MOVE_UP     &to 3            &to 0            &to 0            &to 0            &trans  &to 5
 &bt BT_CLR      &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4    &mmv MOVE_DOWN   &trans           &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &trans           &trans  &to 6
-&bt BT_CLR_ALL  &out OUT_USB   &out OUT_BLE   &trans         &trans         &trans           &mmv MOVE_LEFT   &rgb_ug RGB_EFR  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &trans  &trans
+&bt BT_CLR_ALL  &out OUT_USB   &out OUT_BLE   &trans         &trans         &trans           &mmv MOVE_LEFT   &rgb_ug RGB_EFR  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &trans  &to 7
 &bootloader     &sys_reset     &trans         &trans         &trans         &trans           &mmv MOVE_RIGHT  &trans           &trans           &trans           &trans           &trans  &trans
 &trans          &trans         &trans         &trans         &trans         &trans           &mkp LCLK        &trans           &trans           &trans           &trans           &trans
             >;
@@ -239,6 +239,26 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
+        };
+
+        normal {
+            bindings = <
+&kp GRAVE  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5     &trans  &kp N6     &kp N7     &kp N8     &kp N9    &kp N0    &kp BSPC
+&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T      &trans  &kp Y      &kp U      &kp I      &kp O     &kp P     &kp MINUS
+&kp CAPS   &kp A      &kp S     &kp D     &kp F      &kp G      &trans  &kp H      &kp J      &kp K      &kp L     &kp SEMI  &kp APOS
+&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B      &trans  &kp N      &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
+&trans     &kp LCTRL  &kp LALT  &kp LGUI  &kp SPACE  &kp ESC    &trans  &kp ENTER  &kp SPACE  &kp RGUI   &kp RALT  &mo 8
+            >;
+        };
+
+        normal_sym_nav {
+            bindings = <
+&kp ESC  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5    &trans  &kp F6  &kp F7  &kp F8     &kp F9    &kp F10    &kp DEL
+&trans   &kp F11  &kp F12  &trans  &trans  &trans    &trans  &trans  &trans  &kp EQUAL  &kp LBKT  &kp RBKT   &kp BSLH
+&trans   &trans   &trans   &trans  &trans  &trans    &trans  &trans  &trans  &trans     &kp UP    &trans     &trans
+&trans   &trans   &trans   &trans  &trans  &trans    &trans  &trans  &trans  &kp LEFT   &kp DOWN  &kp RIGHT  &trans
+&trans   &trans   &trans   &trans  &trans  &trans    &trans  &trans  &trans  &trans     &trans    &trans
+            >;
         };
     };
 };
