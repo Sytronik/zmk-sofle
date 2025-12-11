@@ -14,7 +14,7 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - {t: '-', s: _}
-  - LANG2
+  - {t: 'Alt+$$mdi:keyboard-return$$', type: enter}
   - Q
   - W
   - E
@@ -250,7 +250,7 @@ layers:
   - system
   - $$mdi:volume-off$$
   - LWIN
-  - $$mdi:apple-keyboard-option$$
+  - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$', s: num}
   - {t: '$$mdi:keyboard-esc$$', h: sym-nav}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
   - $$mdi:keyboard-tab$$
