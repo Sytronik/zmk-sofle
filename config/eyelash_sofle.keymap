@@ -70,7 +70,7 @@
     lcmd_to_numlayer: lcmd_to_numlayer {
         compatible = "zmk,behavior-mod-morph";
         label = "LCMD_TO_NUMLAYER";
-        bindings = <&sk LCMD>, <&to 4>;
+        bindings = <&sk LCMD>, <&tog 4>;
 
         #binding-cells = <0>;
         mods = <(MOD_LGUI)>;
@@ -196,11 +196,11 @@
 
         num {
             bindings = <
-&trans  &trans       &trans        &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp KP_PLUS  &kp N7        &kp N8  &kp N9  &kp EQUAL    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp MINUS    &kp N4        &kp N5  &kp N6  &kp ENTER    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp ASTRK    &kp N1        &kp N2  &kp N3  &kp COMMA    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp DOT      &kp NUMBER_0  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans       &trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans   &trans  &trans  &trans
+&trans  &kp KP_PLUS  &kp N7  &kp N8  &kp N9  &kp ASTRK    &trans  &trans  &trans  &trans   &trans  &trans  &trans
+&trans  &kp MINUS    &kp N4  &kp N5  &kp N6  &kp SLASH    &trans  &trans  &trans  &trans   &trans  &trans  &trans
+&trans  &kp EQUAL    &kp N1  &kp N2  &kp N3  &kp COMMA    &trans  &trans  &trans  &trans   &trans  &trans  &trans
+&trans  &kp DOT      &trans  &kp N0  &trans  &trans       &trans  &trans  &trans  &kp ESC  &trans  &trans
             >;
         };
     };
