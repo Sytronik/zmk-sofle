@@ -150,9 +150,9 @@
         base {
             bindings = <
 &kp GRAVE      &kp N1    &kp N2             &kp N3       &kp N4                 &kp N5     &kp UP_ARROW     &kp N6     &kp N7                &kp N8       &kp N9        &kp N0     &kp MINUS
-&kp LA(ENTER)  &kp Q     &kp W              &kp E        &kp R                  &kp T      &kp DOWN_ARROW   &kp Y      &kp U                 &kp I        &kp O         &kp P      &kp EQUAL
-&kp LCTRL      &kp A     &hrm LCTRL S       &hrm LCMD D  &hrm LALT F            &kp G      &kp LEFT_ARROW   &kp H      &hrm LALT J           &hrm LCMD K  &hrm RCTRL L  &kp SEMI   &kp APOS
-&kp GLOBE      &kp Z     &kp X              &kp C        &kp V                  &kp B      &kp RIGHT_ARROW  &kp N      &kp M                 &kp COMMA    &kp DOT       &kp FSLH   &mo 2
+&kp LA(ENTER)  &kp Q     &kp W              &kp F        &kp P                  &kp B      &kp DOWN_ARROW   &kp J      &kp L                 &kp U        &kp Y         &kp SEMI   &kp EQUAL
+&kp LCTRL      &kp A     &hrm LCTRL R       &hrm LCMD S  &hrm LALT T            &kp G      &kp LEFT_ARROW   &kp M      &hrm LALT N           &hrm LCMD E  &hrm RCTRL I  &kp O      &kp APOS
+&kp GLOBE      &kp Z     &kp X              &kp C        &kp D                  &kp V      &kp RIGHT_ARROW  &kp K      &kp H                 &kp COMMA    &kp DOT       &kp FSLH   &mo 2
 &kp C_MUTE     &kp LALT  &lcmd_to_numlayer  &lt 1 ESC    &lshft_mt LSHFT SPACE  &kp TAB    &kp ENTER        &kp ENTER  &rshft_mt RSHFT BSPC  &lt 1 RCMD   &kp LEFT      &kp RIGHT
             >;
 
@@ -177,8 +177,8 @@
 
         system {
             bindings = <
-&soft_off       &sel_win       &sel1_mac      &sel2_mac      &sel3_ipad     &bt BT_SEL 4     &mmv MOVE_UP     &to 3            &to 0            &to 0            &to 0            &trans  &trans
-&bt BT_CLR      &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4    &mmv MOVE_DOWN   &trans           &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &trans           &trans  &trans
+&soft_off       &sel_win       &sel1_mac      &sel2_mac      &sel3_ipad     &bt BT_SEL 4     &mmv MOVE_UP     &to 3            &to 0            &to 0            &to 0            &trans  &to 5
+&bt BT_CLR      &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4    &mmv MOVE_DOWN   &trans           &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &trans           &trans  &to 6
 &bt BT_CLR_ALL  &out OUT_USB   &out OUT_BLE   &trans         &trans         &trans           &mmv MOVE_LEFT   &rgb_ug RGB_EFR  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &trans  &trans
 &bootloader     &sys_reset     &trans         &trans         &trans         &trans           &mmv MOVE_RIGHT  &trans           &trans           &trans           &trans           &trans  &trans
 &trans          &trans         &trans         &trans         &trans         &trans           &mkp LCLK        &trans           &trans           &trans           &trans           &trans
@@ -193,9 +193,9 @@
             display-name = "LAYER0";
             bindings = <
 &kp GRAVE   &kp N1    &kp N2             &kp N3       &kp N4                 &kp N5     &kp UP_ARROW     &kp N6     &kp N7                &kp N8       &kp N9        &kp N0     &kp MINUS
-&kp LANG2   &kp Q     &kp W              &kp E        &kp R                  &kp T      &kp DOWN_ARROW   &kp Y      &kp U                 &kp I        &kp O         &kp P      &kp EQUAL
-&kp LCTRL   &kp A     &hrm LCTRL S       &hrm LWIN D  &hrm LALT F            &kp G      &kp LEFT_ARROW   &kp H      &hrm LALT J           &hrm RWIN K  &hrm RCTRL L  &kp SEMI   &kp APOS
-&none       &kp Z     &kp X              &kp C        &kp V                  &kp B      &kp RIGHT_ARROW  &kp N      &kp M                 &kp COMMA    &kp DOT       &kp FSLH   &mo 2
+&kp LANG2   &kp Q     &kp W              &kp F        &kp P                  &kp B      &kp DOWN_ARROW   &kp J      &kp L                 &kp U        &kp Y         &kp SEMI   &kp EQUAL
+&kp LCTRL   &kp A     &hrm LCTRL R       &hrm LWIN S  &hrm LALT T            &kp G      &kp LEFT_ARROW   &kp M      &hrm LALT N           &hrm RWIN E  &hrm RCTRL I  &kp O      &kp APOS
+&none       &kp Z     &kp X              &kp C        &kp D                  &kp V      &kp RIGHT_ARROW  &kp K      &kp H                 &kp COMMA    &kp DOT       &kp FSLH   &mo 2
 &kp C_MUTE  &kp LWIN  &lalt_to_numlayer  &lt 1 ESC    &lshft_mt LSHFT SPACE  &kp TAB    &kp ENTER        &kp ENTER  &rshft_mt RSHFT BSPC  &lt 1 RALT   &kp LEFT      &kp RIGHT
             >;
 
@@ -211,6 +211,34 @@
 &trans  &kp EQUAL    &kp N1  &kp N2  &kp N3  &kp COMMA    &trans  &trans  &trans  &trans   &trans  &trans  &trans
 &trans  &kp DOT      &trans  &kp N0  &trans  &trans       &trans  &trans  &trans  &kp ESC  &trans  &trans
             >;
+        };
+
+        qwerty {
+            label = "qwerty";
+            display-name = "LAYER0";
+            bindings = <
+&kp GRAVE      &kp N1    &kp N2             &kp N3       &kp N4                 &kp N5     &kp UP_ARROW     &kp N6     &kp N7                &kp N8       &kp N9        &kp N0     &kp MINUS
+&kp LA(ENTER)  &kp Q     &kp W              &kp E        &kp R                  &kp T      &kp DOWN_ARROW   &kp Y      &kp U                 &kp I        &kp O         &kp P      &kp EQUAL
+&kp LCTRL      &kp A     &hrm LCTRL S       &hrm LCMD D  &hrm LALT F            &kp G      &kp LEFT_ARROW   &kp H      &hrm LALT J           &hrm LCMD K  &hrm RCTRL L  &kp SEMI   &kp APOS
+&kp GLOBE      &kp Z     &kp X              &kp C        &kp V                  &kp B      &kp RIGHT_ARROW  &kp N      &kp M                 &kp COMMA    &kp DOT       &kp FSLH   &mo 2
+&kp C_MUTE     &kp LALT  &lcmd_to_numlayer  &lt 1 ESC    &lshft_mt LSHFT SPACE  &kp TAB    &kp ENTER        &kp ENTER  &rshft_mt RSHFT BSPC  &lt 1 RCMD   &kp LEFT      &kp RIGHT
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
+        };
+
+        win_qwerty {
+            label = "win_qwerty";
+            display-name = "LAYER0";
+            bindings = <
+&kp GRAVE   &kp N1    &kp N2             &kp N3       &kp N4                 &kp N5     &kp UP_ARROW     &kp N6     &kp N7                &kp N8       &kp N9        &kp N0     &kp MINUS
+&kp LANG2   &kp Q     &kp W              &kp E        &kp R                  &kp T      &kp DOWN_ARROW   &kp Y      &kp U                 &kp I        &kp O         &kp P      &kp EQUAL
+&kp LCTRL   &kp A     &hrm LCTRL S       &hrm LWIN D  &hrm LALT F            &kp G      &kp LEFT_ARROW   &kp H      &hrm LALT J           &hrm RWIN K  &hrm RCTRL L  &kp SEMI   &kp APOS
+&none       &kp Z     &kp X              &kp C        &kp V                  &kp B      &kp RIGHT_ARROW  &kp N      &kp M                 &kp COMMA    &kp DOT       &kp FSLH   &mo 2
+&kp C_MUTE  &kp LWIN  &lalt_to_numlayer  &lt 1 ESC    &lshft_mt LSHFT SPACE  &kp TAB    &kp ENTER        &kp ENTER  &rshft_mt RSHFT BSPC  &lt 1 RALT   &kp LEFT      &kp RIGHT
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
     };
 };
