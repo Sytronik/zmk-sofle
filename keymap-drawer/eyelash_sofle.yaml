@@ -156,7 +156,7 @@ layers:
   - RGB SPI
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: win_qwerty, h: toggle}
+  - {t: qwerty_win, h: toggle}
   - BT CLR ALL
   - OUT USB
   - OUT BLE
@@ -390,7 +390,7 @@ layers:
   - {t: '$$mdi:apple-keyboard-command$$', h: sym-nav}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-right-bold$$
-  win_qwerty:
+  qwerty_win:
   - {t: '`', s: '~'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -603,10 +603,10 @@ combos:
   l: [base, qwerty]
 - p: [41, 42]
   k: Ctl+X
-  l: [win, win_qwerty]
+  l: [win, qwerty_win]
 - p: [42, 43]
   k: Ctl+C
-  l: [win, win_qwerty]
+  l: [win, qwerty_win]
 - p: [43, 44]
   k: Ctl+V
-  l: [win, win_qwerty]
+  l: [win, qwerty_win]
