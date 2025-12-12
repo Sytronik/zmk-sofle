@@ -112,7 +112,38 @@
     behaviors {
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        cut {
+            bindings = <&kp LG(X)>;
+            key-positions = <41 42>;
+            layers = <0 5>;
+        };
+
+        copy {
+            bindings = <&kp LG(C)>;
+            key-positions = <42 43>;
+            layers = <0 5>;
+        };
+
+        paste {
+            bindings = <&kp LG(V)>;
+            key-positions = <43 44>;
+            layers = <0 5>;
+        };
+
+        save {
+            bindings = <&kp S>;
+            key-positions = <28 29 30>;
+        };
+
+        find {
+            bindings = <&kp LG(F)>;
+            key-positions = <16 17>;
+            layers = <0 5>;
+        };
+    };
 
     macros {
         sel_win: sel_win {
@@ -158,7 +189,6 @@
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
             display-name = "LAYER0";
-            label = "base";
         };
 
         sym-nav {
@@ -172,7 +202,6 @@
 
             display-name = "layer1";
             sensor-bindings = <&scroll_encoder>;
-            label = "sym-nav";
         };
 
         system {
@@ -186,7 +215,6 @@
 
             display-name = "layer2";
             sensor-bindings = <&scroll_encoder>;
-            label = "system";
         };
 
         win {
@@ -200,7 +228,6 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
-            label = "win";
         };
 
         num {
@@ -214,7 +241,6 @@
         };
 
         qwerty {
-            label = "qwerty";
             display-name = "LAYER0";
             bindings = <
 &kp GRAVE      &kp N1    &kp N2             &kp N3       &kp N4                 &kp N5     &kp UP_ARROW     &kp N6     &kp N7                &kp N8       &kp N9        &kp N0     &kp MINUS
@@ -228,7 +254,6 @@
         };
 
         win_qwerty {
-            label = "win_qwerty";
             display-name = "LAYER0";
             bindings = <
 &kp GRAVE   &kp N1    &kp N2             &kp N3       &kp N4                 &kp N5     &kp UP_ARROW     &kp N6     &kp N7                &kp N8       &kp N9        &kp N0     &kp MINUS
