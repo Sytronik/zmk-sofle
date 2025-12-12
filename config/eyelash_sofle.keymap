@@ -136,12 +136,31 @@
         save {
             bindings = <&kp S>;
             key-positions = <28 29 30>;
+            layers = <0 5>;
         };
 
         find {
             bindings = <&kp LG(F)>;
             key-positions = <16 17>;
             layers = <0 5>;
+        };
+
+        cut_win {
+            bindings = <&kp LC(X)>;
+            key-positions = <41 42>;
+            layers = <3 6>;
+        };
+
+        copy_win {
+            bindings = <&kp LC(C)>;
+            key-positions = <42 43>;
+            layers = <3 6>;
+        };
+
+        paste_win {
+            bindings = <&kp LC(V)>;
+            key-positions = <43 44>;
+            layers = <3 6>;
         };
     };
 
