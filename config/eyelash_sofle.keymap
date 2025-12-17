@@ -206,6 +206,7 @@
 &kp C_MUTE     &kp LALT  &lcmd_to_numlayer  &lt 6 ESC    &lshft_mt LSHFT SPACE  &kp TAB    &kp ENTER        &kp ENTER  &rshft_mt RSHFT BSPC  &lt 6 RCMD   &kp LEFT      &kp RIGHT
             >;
 
+            display-name = "base";
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
 
@@ -218,6 +219,7 @@
 &kp C_MUTE  &kp LWIN  &lalt_to_numlayer  &lt 6 ESC    &lshft_mt LSHFT SPACE  &kp TAB    &kp ENTER        &kp ENTER  &rshft_mt RSHFT BSPC  &lt 6 RALT   &kp LEFT      &kp RIGHT
             >;
 
+            display-name = "win";
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
 
@@ -230,6 +232,7 @@
 &kp C_MUTE     &kp LALT  &lcmd_to_numlayer  &lt 6 ESC    &lshft_mt LSHFT SPACE  &kp TAB    &kp ENTER        &kp ENTER  &rshft_mt RSHFT BSPC  &lt 6 RCMD   &kp LEFT      &kp RIGHT
             >;
 
+            display-name = "qwerty";
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
 
@@ -242,6 +245,7 @@
 &kp C_MUTE  &kp LWIN  &lalt_to_numlayer  &lt 6 ESC    &lshft_mt LSHFT SPACE  &kp TAB    &kp ENTER        &kp ENTER  &rshft_mt RSHFT BSPC  &lt 6 RALT   &kp LEFT      &kp RIGHT
             >;
 
+            display-name = "qwe_win";
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
 
@@ -253,6 +257,8 @@
 &kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B     &trans  &kp N      &kp M      &kp COMMA  &kp DOT   &kp FSLH   &kp RSHFT
 &trans     &kp LCTRL  &kp LALT  &kp LGUI  &kp SPACE  &mo 5     &trans  &kp ENTER  &kp SPACE  &kp RGUI   &kp RALT  &kp GRAVE
             >;
+
+            display-name = "normal";
         };
 
         normal_sym_nav {
@@ -263,6 +269,8 @@
 &trans   &trans   &trans   &trans  &trans  &trans    &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans     &trans   &trans
 &trans   &trans   &trans   &trans  &trans  &trans    &trans  &trans  &trans            &trans             &trans     &trans
             >;
+
+            display-name = "norm_nav";
         };
 
         sym-nav {
@@ -274,6 +282,7 @@
 &kp C_MUTE  &trans  &trans  &trans    &caps_word  &trans    &mkp LCLK        &trans     &kp DEL    &trans     &trans     &trans
             >;
 
+            display-name = "sym_nav";
             sensor-bindings = <&scroll_encoder>;
         };
 
@@ -285,6 +294,8 @@
 &trans  &kp EQUAL    &kp N1  &kp N2  &kp N3  &kp COMMA    &trans  &trans  &trans  &trans   &trans  &trans  &trans
 &trans  &kp DOT      &trans  &kp N0  &trans  &trans       &trans  &trans  &trans  &kp ESC  &trans  &trans
             >;
+ 
+            display-name = "num";
         };
 
         system {
@@ -296,6 +307,7 @@
 &trans          &trans         &trans         &trans         &trans         &trans           &trans  &trans           &trans           &trans           &trans           &trans
             >;
 
+            display-name = "system";
             sensor-bindings = <&scroll_encoder>;
         };
     };
