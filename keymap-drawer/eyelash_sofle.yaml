@@ -418,8 +418,8 @@ layers:
   - INS
   - F12
   - $$mdi:apple-keyboard-caps$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Sft+Ctl+$$mdi:keyboard-tab$$
+  - Ctl+$$mdi:keyboard-tab$$
   - (
   - )
   - {t: '$$mdi:transfer$$', type: trans}
