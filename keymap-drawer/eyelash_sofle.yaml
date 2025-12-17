@@ -56,13 +56,13 @@ layers:
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:apple-keyboard-command$$', h: '$$mdi:gesture-tap-hold$$', s: num}
-  - {t: '$$mdi:keyboard-esc$$', h: sym-nav}
+  - {t: '$$mdi:keyboard-esc$$', h: sym_nav}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
   - $$mdi:keyboard-tab$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '$$mdi:apple-keyboard-command$$', h: sym-nav}
+  - {t: '$$mdi:apple-keyboard-command$$', h: sym_nav}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-right-bold$$
   win:
@@ -121,13 +121,13 @@ layers:
   - $$mdi:volume-off$$
   - LWIN
   - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$', s: num}
-  - {t: '$$mdi:keyboard-esc$$', h: sym-nav}
+  - {t: '$$mdi:keyboard-esc$$', h: sym_nav}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
   - $$mdi:keyboard-tab$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '$$mdi:apple-keyboard-option$$', h: sym-nav}
+  - {t: '$$mdi:apple-keyboard-option$$', h: sym_nav}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-right-bold$$
   qwerty:
@@ -186,16 +186,16 @@ layers:
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:apple-keyboard-command$$', h: '$$mdi:gesture-tap-hold$$', s: num}
-  - {t: '$$mdi:keyboard-esc$$', h: sym-nav}
+  - {t: '$$mdi:keyboard-esc$$', h: sym_nav}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
   - $$mdi:keyboard-tab$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '$$mdi:apple-keyboard-command$$', h: sym-nav}
+  - {t: '$$mdi:apple-keyboard-command$$', h: sym_nav}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-right-bold$$
-  qwerty_win:
+  qwe_win:
   - {t: '`', s: '~'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -251,13 +251,13 @@ layers:
   - $$mdi:volume-off$$
   - LWIN
   - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$', s: num}
-  - {t: '$$mdi:keyboard-esc$$', h: sym-nav}
+  - {t: '$$mdi:keyboard-esc$$', h: sym_nav}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
   - $$mdi:keyboard-tab$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '$$mdi:apple-keyboard-option$$', h: sym-nav}
+  - {t: '$$mdi:apple-keyboard-option$$', h: sym_nav}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-right-bold$$
   normal:
@@ -318,14 +318,14 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - LGUI
   - $$mdi:keyboard-space$$
-  - normal_sym_nav
+  - norm_nav
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-space$$
   - RGUI
   - $$mdi:apple-keyboard-option$$
   - {t: '`', s: '~'}
-  normal_sym_nav:
+  norm_nav:
   - $$mdi:keyboard-esc$$
   - F1
   - F2
@@ -390,7 +390,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  sym-nav:
+  sym_nav:
   - {t: '$$mdi:transfer$$', type: trans}
   - F1
   - F2
@@ -546,7 +546,7 @@ layers:
   - RGB SPI
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: qwerty_win, h: toggle}
+  - {t: qwe_win, h: toggle}
   - BT CLR ALL
   - OUT USB
   - OUT BLE
@@ -603,10 +603,10 @@ combos:
   l: [base, qwerty]
 - p: [41, 42]
   k: Ctl+X
-  l: [win, qwerty_win]
+  l: [win, qwe_win]
 - p: [42, 43]
   k: Ctl+C
-  l: [win, qwerty_win]
+  l: [win, qwe_win]
 - p: [43, 44]
   k: Ctl+V
-  l: [win, qwerty_win]
+  l: [win, qwe_win]
