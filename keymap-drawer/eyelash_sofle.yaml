@@ -40,7 +40,7 @@ layers:
   - {t: I, h: '$$mdi:apple-keyboard-control$$'}
   - O
   - {t: '''', s: '"'}
-  - GLOBE
+  - {t: GLOBE, h: qwerty}
   - Z
   - X
   - C
@@ -62,7 +62,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '$$mdi:apple-keyboard-command$$', h: sym_nav}
+  - {t: 'Sft+$$mdi:keyboard-space$$', h: sym_nav}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-right-bold$$
   win:
@@ -105,7 +105,7 @@ layers:
   - {t: I, h: '$$mdi:apple-keyboard-control$$'}
   - O
   - {t: '''', s: '"'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', h: qwe_win}
   - Z
   - X
   - C
@@ -155,7 +155,7 @@ layers:
   - U
   - I
   - O
-  - P
+  - {t: ;, s: ':'}
   - {t: '=', s: +}
   - $$mdi:apple-keyboard-control$$
   - A
@@ -168,9 +168,9 @@ layers:
   - {t: J, h: '$$mdi:apple-keyboard-option$$'}
   - {t: K, h: '$$mdi:apple-keyboard-command$$'}
   - {t: L, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: ;, s: ':'}
+  - P
   - {t: '''', s: '"'}
-  - GLOBE
+  - {t: GLOBE, h: base}
   - Z
   - X
   - C
@@ -192,7 +192,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '$$mdi:apple-keyboard-command$$', h: sym_nav}
+  - {t: 'Sft+$$mdi:keyboard-space$$', h: sym_nav}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-right-bold$$
   qwe_win:
@@ -220,7 +220,7 @@ layers:
   - U
   - I
   - O
-  - P
+  - {t: ;, s: ':'}
   - {t: '=', s: +}
   - $$mdi:apple-keyboard-control$$
   - A
@@ -233,9 +233,9 @@ layers:
   - {t: J, h: '$$mdi:apple-keyboard-option$$'}
   - {t: K, h: RWIN}
   - {t: L, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: ;, s: ':'}
+  - P
   - {t: '''', s: '"'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', h: win}
   - Z
   - X
   - C
@@ -521,20 +521,20 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   system:
-  - '&soft_off'
+  - OUT BLE
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
   - {h: '4', s: '$$mdi:bluetooth-connect$$'}
   - {h: '5', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: base, h: toggle}
   - {t: win, h: toggle}
-  - {t: base, h: toggle}
-  - {t: base, h: toggle}
-  - {t: base, h: toggle}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: qwerty, h: toggle}
-  - $$mdi:bluetooth-off$$
+  - {t: qwe_win, h: toggle}
+  - {t: normal, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - OUT USB
   - {t: BT DISC, h: '0'}
   - {t: BT DISC, h: '1'}
   - {t: BT DISC, h: '2'}
@@ -546,10 +546,10 @@ layers:
   - RGB SPI
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: qwe_win, h: toggle}
-  - BT CLR ALL
-  - OUT USB
-  - OUT BLE
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:bluetooth-off$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -559,9 +559,9 @@ layers:
   - RGB BRI
   - RGB EFF
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: normal, h: toggle}
-  - $$mdi:progress-download$$
-  - {t: '$$mdi:backup-restore$$', type: bootloader}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - BT CLR ALL
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
