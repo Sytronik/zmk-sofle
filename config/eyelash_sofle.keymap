@@ -67,15 +67,6 @@
         flavor = "balanced";
     };
 
-    lcmd_to_numlayer: lcmd_to_numlayer {
-        compatible = "zmk,behavior-mod-morph";
-        label = "LCMD_TO_NUMLAYER";
-        bindings = <&sk LCMD>, <&tog 7>;
-
-        #binding-cells = <0>;
-        mods = <(MOD_LGUI)>;
-    };
-
     lshft_mt: lshft_mt {
         compatible = "zmk,behavior-hold-tap";
         label = "LSHFT_MT";
@@ -98,6 +89,15 @@
         quick-tap-ms = <150>;
         flavor = "balanced";
         hold-trigger-key-positions = <55 56 57 54 53 39 41 42 26 29 31 44 43 30 27 28 40 13 0 2 4 5 18 17 3 16 15 14 1>;
+    };
+
+    lcmd_to_numlayer: lcmd_to_numlayer {
+        compatible = "zmk,behavior-mod-morph";
+        label = "LCMD_TO_NUMLAYER";
+        bindings = <&sk LCMD>, <&tog 7>;
+
+        #binding-cells = <0>;
+        mods = <(MOD_LGUI)>;
     };
 
     lalt_to_numlayer: lalt_to_numlayer {
