@@ -238,6 +238,7 @@
         compatible = "zmk,keymap";
 
         base {
+            display-name = "base";
             bindings = <
 &kp GRAVE             &kp N1    &kp N2         &kp N3                 &kp N4        &kp N5               &kp UP_ARROW     &kp N6    &kp N7        &kp N8                &kp N9           &kp N0     &kp MINUS
 &kp LA(ENTER)         &kp Q     &kp W          &kp F                  &kp P         &kp B                &kp DOWN_ARROW   &kp J     &kp L         &kp U                 &kp Y            &kp SEMI   &kp EQUAL
@@ -246,11 +247,11 @@
 &kp C_MUTE            &kp LALT  &lt 6 ESC      &lshft_mt LSHFT SPACE  &kp TAB       &lcmd_to_numlayer    &kp ENTER        &kp LEFT  &kp ENTER     &rshft_mt RSHFT BSPC  &lt 6 LS(SPACE)  &kp RIGHT
             >;
 
-            display-name = "base";
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
 
         win {
+            display-name = "win";
             bindings = <
 &kp GRAVE             &kp N1    &kp N2         &kp N3                 &kp N4        &kp N5               &kp UP_ARROW     &kp N6    &kp N7        &kp N8                &kp N9         &kp N0     &kp MINUS
 &kp LANG2             &kp Q     &kp W          &kp F                  &kp P         &kp B                &kp DOWN_ARROW   &kp J     &kp L         &kp U                 &kp Y          &kp SEMI   &kp EQUAL
@@ -259,11 +260,11 @@
 &kp C_MUTE            &kp LWIN  &lt 7 ESC      &lshft_mt LSHFT SPACE  &kp TAB       &lalt_to_numlayer    &kp ENTER        &kp LEFT  &kp ENTER     &rshft_mt RSHFT BSPC  &lt 7 RALT     &kp RIGHT
             >;
 
-            display-name = "win";
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
 
         qwerty {
+            display-name = "qwerty";
             bindings = <
 &kp GRAVE             &kp N1    &kp N2         &kp N3                 &kp N4        &kp N5               &kp UP_ARROW     &kp N6    &kp N7        &kp N8                &kp N9           &kp N0     &kp MINUS
 &kp LA(ENTER)         &kp Q     &kp W          &kp E                  &kp R         &kp T                &kp DOWN_ARROW   &kp Y     &kp U         &kp I                 &kp O            &kp SEMI   &kp EQUAL
@@ -272,11 +273,11 @@
 &kp C_MUTE            &kp LALT  &lt 6 ESC      &lshft_mt LSHFT SPACE  &kp TAB       &lcmd_to_numlayer    &kp ENTER        &kp LEFT  &kp ENTER     &rshft_mt RSHFT BSPC  &lt 6 LS(SPACE)  &kp RIGHT
             >;
 
-            display-name = "qwerty";
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
 
         qwerty_win {
+            display-name = "qwe_win";
             bindings = <
 &kp GRAVE             &kp N1    &kp N2         &kp N3                 &kp N4        &kp N5               &kp UP_ARROW     &kp N6    &kp N7        &kp N8                &kp N9         &kp N0     &kp MINUS
 &kp LANG2             &kp Q     &kp W          &kp E                  &kp R         &kp T                &kp DOWN_ARROW   &kp Y     &kp U         &kp I                 &kp O          &kp SEMI   &kp EQUAL
@@ -285,11 +286,11 @@
 &kp C_MUTE            &kp LWIN  &lt 7 ESC      &lshft_mt LSHFT SPACE  &kp TAB       &lalt_to_numlayer    &kp ENTER        &kp LEFT  &kp ENTER     &rshft_mt RSHFT BSPC  &lt 7 RALT     &kp RIGHT
             >;
 
-            display-name = "qwe_win";
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
 
         normal {
+            display-name = "normal";
             bindings = <
 &kp ESC    &kp N1     &kp N2    &kp N3    &kp N4     &kp N5    &trans  &kp N6     &kp N7     &kp N8     &kp N9    &kp N0     &kp BSPC
 &kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T     &trans  &kp Y      &kp U      &kp I      &kp O     &kp P      &kp MINUS
@@ -298,10 +299,10 @@
 &trans     &kp LCTRL  &kp LALT  &kp LGUI  &kp SPACE  &mo 5     &trans  &kp ENTER  &kp SPACE  &kp RGUI   &kp RALT  &kp GRAVE
             >;
 
-            display-name = "normal";
         };
 
         normal_sym_nav {
+            display-name = "sym_nav";
             bindings = <
 &kp ESC  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5    &trans  &kp F6  &kp F7            &kp F8             &kp F9     &kp F10  &kp DEL
 &trans   &kp F11  &kp F12  &trans  &trans  &trans    &trans  &trans  &trans            &kp UP             &trans     &trans   &kp EQUAL
@@ -309,11 +310,10 @@
 &trans   &trans   &trans   &trans  &trans  &trans    &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans     &trans   &trans
 &trans   &trans   &trans   &trans  &trans  &trans    &trans  &trans  &trans            &trans             &trans     &trans
             >;
-
-            display-name = "norm_nav";
         };
 
         sym-nav {
+            display-name = "sym_nav";
             bindings = <
 &trans      &kp F1           &kp F2       &kp F3      &kp F4    &kp F5    &mmv MOVE_UP     &kp F6        &kp F7     &kp F8     &kp F9         &kp F10   &kp F11
 &trans      &trans           &trans       &kp LBRC    &kp RBRC  &trans    &mmv MOVE_DOWN   &kp LG(LEFT)  &kp PG_DN  &kp PG_UP  &kp LG(RIGHT)  &kp INS   &kp F12
@@ -322,7 +322,6 @@
 &kp C_MUTE  &trans           &trans       &caps_word  &trans    &trans    &mkp LCLK        &trans        &trans     &kp DEL    &trans         &trans
             >;
 
-            display-name = "sym_nav";
             sensor-bindings = <&scroll_encoder>;
         };
 
@@ -340,6 +339,7 @@
         };
 
         num {
+            display-name = "num";
             bindings = <
 &trans  &trans       &trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans   &trans  &trans
 &trans  &kp KP_PLUS  &kp N7  &kp N8  &kp N9  &kp ASTRK    &trans  &trans  &trans  &trans  &trans   &trans  &trans
@@ -348,10 +348,10 @@
 &trans  &kp DOT      &kp N0  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &kp ESC  &trans
             >;
 
-            display-name = "num";
         };
 
         system {
+            display-name = "system";
             bindings = <
 &out OUT_BLE    &sel_win       &sel1_mac      &sel2_mac      &sel3_ipad     &bt BT_SEL 4     &trans  &to 0            &to 1            &to 2            &to 3            &to 4            &trans
 &out OUT_USB    &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4    &trans  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &trans           &trans
@@ -360,7 +360,6 @@
 &trans          &trans         &trans         &trans         &sys_reset     &bootloader      &trans  &bootloader      &sys_reset       &trans           &trans           &trans
             >;
 
-            display-name = "system";
             sensor-bindings = <&scroll_encoder>;
         };
     };
