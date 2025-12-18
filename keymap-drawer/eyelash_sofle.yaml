@@ -558,7 +558,7 @@ layers:
   - RGB BRD
   - RGB BRI
   - RGB EFF
-  - {t: '$$mdi:transfer$$', type: trans}
+  - RGB TOG
   - {t: '$$mdi:transfer$$', type: trans}
   - BT CLR ALL
   - {t: '$$mdi:transfer$$', type: trans}
