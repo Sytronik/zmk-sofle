@@ -62,7 +62,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - '&rshft_mt RSHFT BSPC'
   - {t: 'Sft+$$mdi:keyboard-space$$', h: sym_nav}
   - $$mdi:arrow-right-bold$$
   win:
@@ -127,7 +127,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - '&rshft_mt RSHFT BSPC'
   - {t: '$$mdi:apple-keyboard-option$$', h: sym_nav}
   - $$mdi:arrow-right-bold$$
   qwerty:
@@ -192,7 +192,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - '&rshft_mt RSHFT BSPC'
   - {t: 'Sft+$$mdi:keyboard-space$$', h: sym_nav}
   - $$mdi:arrow-right-bold$$
   qwe_win:
@@ -257,7 +257,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - '&rshft_mt RSHFT BSPC'
   - {t: '$$mdi:apple-keyboard-option$$', h: sym_nav}
   - $$mdi:arrow-right-bold$$
   normal:
