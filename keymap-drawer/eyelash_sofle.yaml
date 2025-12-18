@@ -596,7 +596,7 @@ combos:
   k: {t: V, h: '$$mdi:apple-keyboard-command$$'}
   l: [base, qwerty]
 - p: [28, 29, 30]
-  k: S
+  k: {t: S, h: '$$mdi:apple-keyboard-command$$'}
   l: [base, qwerty]
 - p: [16, 17]
   k: {t: F, h: '$$mdi:apple-keyboard-command$$'}
