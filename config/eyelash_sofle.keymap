@@ -26,11 +26,7 @@
     trigger-period-ms = <16>;
 };
 
-&soft_off {
-    hold-time-ms = <2000>;
-
-    /delete-property/ split-peripheral-off-on-press;
-};
+&soft_off { hold-time-ms = <2000>; };
 
 &lt {
     quick-tap-ms = <200>;
@@ -197,6 +193,12 @@
             bindings = <&kp LC(V)>;
             key-positions = <43 44>;
             layers = <1 3>;
+        };
+
+        soft_off {
+            bindings = <&soft_off>;
+            key-positions = <39 57>;
+            layers = <0 2 1 3 4>;
         };
     };
 
