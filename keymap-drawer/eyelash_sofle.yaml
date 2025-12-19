@@ -545,3 +545,6 @@ combos:
 - p: [43, 44]
   k: Ctl+V
   l: [win, qwe_win]
+- p: [39, 57]
+  k: '&soft_off'
+  l: [base, qwerty, win, qwe_win, normal]
