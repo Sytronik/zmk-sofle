@@ -214,7 +214,9 @@
         sel_win: sel_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap_time 500>, <&bt BT_SEL 0 &to 1>;
+            bindings =
+                <&macro_tap_time 250>,
+                <&bt BT_SEL 0 &bt BT_DISC 3 &to 1>;
 
             label = "SEL_WIN";
         };
@@ -222,7 +224,9 @@
         sel1_mac: sel1_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap_time 500>, <&bt BT_SEL 1 &to 0>;
+            bindings =
+                <&macro_tap_time 250>,
+                <&bt BT_SEL 1 &bt BT_DISC 3 &to 0>;
 
             label = "SEL1_MAC";
         };
@@ -230,7 +234,9 @@
         sel2_mac: sel2_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap_time 500>, <&bt BT_SEL 2 &to 0>;
+            bindings =
+                <&macro_tap_time 250>,
+                <&bt BT_SEL 2 &bt BT_DISC 3 &to 0>;
 
             label = "SEL2_MAC";
         };
@@ -238,7 +244,7 @@
         sel3_ipad: sel3_ipad {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap_time 500>, <&bt BT_SEL 3 &to 0>;
+            bindings = <&macro_tap_time 250>, <&bt BT_SEL 3 &to 0>;
 
             label = "SEL3_IPAD";
         };
