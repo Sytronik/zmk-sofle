@@ -29,8 +29,8 @@
 &soft_off { hold-time-ms = <2000>; };
 
 &lt {
-    quick-tap-ms = <200>;
     flavor = "balanced";
+    tapping-term-ms = <180>;
 };
 
 &caps_word { continue-list = <UNDERSCORE BACKSPACE DELETE LEFT RIGHT>; };
