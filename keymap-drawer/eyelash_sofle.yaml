@@ -591,7 +591,7 @@ layers:
   - '&sel1_mac'
   - '&sel2_mac'
   - '&sel3_ipad'
-  - {h: '5', s: '$$mdi:bluetooth-connect$$'}
+  - '&sel4_mac'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: base, h: toggle}
   - {t: win, h: toggle}
