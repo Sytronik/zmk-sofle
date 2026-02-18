@@ -113,20 +113,20 @@
         mods = <(MOD_LALT)>;
     };
 
-    tolayer_tap: tolayer_tap {
+    ht_to_qwerty_w_globe: ht_to_qwerty_w_globe {
         compatible = "zmk,behavior-hold-tap";
-        label = "TOLAYER_TAP";
-        bindings = <&to>, <&kp>;
+        label = "HT_TO_QWERTY_W_GLOBE";
+        bindings = <&kp>, <&to_qwerty_w_globe>;
 
         #binding-cells = <2>;
         tapping-term-ms = <200>;
         flavor = "balanced";
     };
 
-    tolayer_on_hold: tolayer_on_hold {
+    ht_to_base_w_globe: ht_to_base_w_globe {
         compatible = "zmk,behavior-hold-tap";
-        label = "TOLAYER_ON_HOLD";
-        bindings = <&to>, <&none>;
+        label = "HT_TO_BASE_W_GLOBE";
+        bindings = <&kp>, <&to_base_w_globe>;
 
         #binding-cells = <2>;
         tapping-term-ms = <200>;
@@ -258,6 +258,20 @@
 
             label = "SEL4_MAC";
         };
+
+        to_qwerty_w_globe: to_layer_w_globe {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GLOBE &to 2>;
+            label = "TO_LAYER_W_GLOBE";
+        };
+
+        to_base_w_globe: to_base_w_globe {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GLOBE &to 0>;
+            label = "TO_BASE_W_GLOBE";
+        };
     };
 
     keymap {
@@ -266,11 +280,11 @@
         base {
             display-name = "base";
             bindings = <
-&kp GRAVE             &kp N1    &kp N2         &kp N3                 &kp N4        &kp N5               &kp UP_ARROW     &kp N6    &kp N7        &kp N8                &kp N9           &kp N0     &kp MINUS
-&kp LA(ENTER)         &kp Q     &kp W          &kp F                  &kp P         &kp B                &kp DOWN_ARROW   &kp J     &kp L         &kp U                 &kp Y            &kp SEMI   &kp EQUAL
-&kp LCTRL             &kp A     &hrml LCTRL R  &hrml LCMD S           &hrml LALT T  &kp G                &kp LEFT_ARROW   &kp M     &hrmr LALT N  &hrmr LCMD E          &hrmr RCTRL I    &kp O      &kp APOS
-&tolayer_tap 2 GLOBE  &kp Z     &kp X          &kp C                  &kp D         &kp V                &kp RIGHT_ARROW  &kp K     &kp H         &kp COMMA             &kp DOT          &kp FSLH   &mo 9
-&kp C_MUTE            &kp LALT  &lt 6 ESC      &lshft_mt LSHFT SPACE  &kp TAB       &lcmd_to_numlayer    &kp ENTER        &kp LEFT  &kp ENTER     &rshft_mt RSHFT BSPC  &lt 6 LS(SPACE)  &kp RIGHT
+&kp GRAVE                          &kp N1    &kp N2         &kp N3                 &kp N4        &kp N5               &kp UP_ARROW     &kp N6    &kp N7        &kp N8                &kp N9           &kp N0     &kp MINUS
+&kp LA(ENTER)                      &kp Q     &kp W          &kp F                  &kp P         &kp B                &kp DOWN_ARROW   &kp J     &kp L         &kp U                 &kp Y            &kp SEMI   &kp EQUAL
+&kp LCTRL                          &kp A     &hrml LCTRL R  &hrml LCMD S           &hrml LALT T  &kp G                &kp LEFT_ARROW   &kp M     &hrmr LALT N  &hrmr LCMD E          &hrmr RCTRL I    &kp O      &kp APOS
+&ht_to_qwerty_w_globe GLOBE GLOBE  &kp Z     &kp X          &kp C                  &kp D         &kp V                &kp RIGHT_ARROW  &kp K     &kp H         &kp COMMA             &kp DOT          &kp FSLH   &mo 9
+&kp C_MUTE                         &kp LALT  &lt 6 ESC      &lshft_mt LSHFT SPACE  &kp TAB       &lcmd_to_numlayer    &kp ENTER        &kp LEFT  &kp ENTER     &rshft_mt RSHFT BSPC  &lt 6 LS(SPACE)  &kp RIGHT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -279,11 +293,11 @@
         win {
             display-name = "win";
             bindings = <
-&kp GRAVE             &kp N1    &kp N2         &kp N3                 &kp N4        &kp N5               &kp UP_ARROW     &kp N6    &kp N7        &kp N8                &kp N9         &kp N0     &kp MINUS
-&kp LANG2             &kp Q     &kp W          &kp F                  &kp P         &kp B                &kp DOWN_ARROW   &kp J     &kp L         &kp U                 &kp Y          &kp SEMI   &kp EQUAL
-&kp LCTRL             &kp A     &hrml LCTRL R  &hrml LWIN S           &hrml LALT T  &kp G                &kp LEFT_ARROW   &kp M     &hrmr LALT N  &hrmr RWIN E          &hrmr RCTRL I  &kp O      &kp APOS
-&tolayer_on_hold 3 0  &kp Z     &kp X          &kp C                  &kp D         &kp V                &kp RIGHT_ARROW  &kp K     &kp H         &kp COMMA             &kp DOT        &kp FSLH   &mo 9
-&kp C_MUTE            &kp LWIN  &lt 7 ESC      &lshft_mt LSHFT SPACE  &kp TAB       &lalt_to_numlayer    &kp ENTER        &kp LEFT  &kp ENTER     &rshft_mt RSHFT BSPC  &lt 7 RALT     &kp RIGHT
+&kp GRAVE   &kp N1    &kp N2         &kp N3                 &kp N4        &kp N5               &kp UP_ARROW     &kp N6    &kp N7        &kp N8                &kp N9         &kp N0     &kp MINUS
+&kp LANG2   &kp Q     &kp W          &kp F                  &kp P         &kp B                &kp DOWN_ARROW   &kp J     &kp L         &kp U                 &kp Y          &kp SEMI   &kp EQUAL
+&kp LCTRL   &kp A     &hrml LCTRL R  &hrml LWIN S           &hrml LALT T  &kp G                &kp LEFT_ARROW   &kp M     &hrmr LALT N  &hrmr RWIN E          &hrmr RCTRL I  &kp O      &kp APOS
+&to 3       &kp Z     &kp X          &kp C                  &kp D         &kp V                &kp RIGHT_ARROW  &kp K     &kp H         &kp COMMA             &kp DOT        &kp FSLH   &mo 9
+&kp C_MUTE  &kp LWIN  &lt 7 ESC      &lshft_mt LSHFT SPACE  &kp TAB       &lalt_to_numlayer    &kp ENTER        &kp LEFT  &kp ENTER     &rshft_mt RSHFT BSPC  &lt 7 RALT     &kp RIGHT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -292,11 +306,11 @@
         qwerty {
             display-name = "qwerty";
             bindings = <
-&kp GRAVE             &kp N1    &kp N2         &kp N3                 &kp N4        &kp N5               &kp UP_ARROW     &kp N6    &kp N7        &kp N8                &kp N9           &kp N0     &kp MINUS
-&kp LA(ENTER)         &kp Q     &kp W          &kp E                  &kp R         &kp T                &kp DOWN_ARROW   &kp Y     &kp U         &kp I                 &kp O            &kp SEMI   &kp EQUAL
-&kp LCTRL             &kp A     &hrml LCTRL S  &hrml LCMD D           &hrml LALT F  &kp G                &kp LEFT_ARROW   &kp H     &hrmr LALT J  &hrmr LCMD K          &hrmr RCTRL L    &kp P      &kp APOS
-&tolayer_tap 0 GLOBE  &kp Z     &kp X          &kp C                  &kp V         &kp B                &kp RIGHT_ARROW  &kp N     &kp M         &kp COMMA             &kp DOT          &kp FSLH   &mo 9
-&kp C_MUTE            &kp LALT  &lt 6 ESC      &lshft_mt LSHFT SPACE  &kp TAB       &lcmd_to_numlayer    &kp ENTER        &kp LEFT  &kp ENTER     &rshft_mt RSHFT BSPC  &lt 6 LS(SPACE)  &kp RIGHT
+&kp GRAVE                        &kp N1    &kp N2         &kp N3                 &kp N4        &kp N5               &kp UP_ARROW     &kp N6    &kp N7        &kp N8                &kp N9           &kp N0     &kp MINUS
+&kp LA(ENTER)                    &kp Q     &kp W          &kp E                  &kp R         &kp T                &kp DOWN_ARROW   &kp Y     &kp U         &kp I                 &kp O            &kp SEMI   &kp EQUAL
+&kp LCTRL                        &kp A     &hrml LCTRL S  &hrml LCMD D           &hrml LALT F  &kp G                &kp LEFT_ARROW   &kp H     &hrmr LALT J  &hrmr LCMD K          &hrmr RCTRL L    &kp P      &kp APOS
+&ht_to_base_w_globe GLOBE GLOBE  &kp Z     &kp X          &kp C                  &kp V         &kp B                &kp RIGHT_ARROW  &kp N     &kp M         &kp COMMA             &kp DOT          &kp FSLH   &mo 9
+&kp C_MUTE                       &kp LALT  &lt 6 ESC      &lshft_mt LSHFT SPACE  &kp TAB       &lcmd_to_numlayer    &kp ENTER        &kp LEFT  &kp ENTER     &rshft_mt RSHFT BSPC  &lt 6 LS(SPACE)  &kp RIGHT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -305,11 +319,11 @@
         qwerty_win {
             display-name = "qwert_w";
             bindings = <
-&kp GRAVE             &kp N1    &kp N2         &kp N3                 &kp N4        &kp N5               &kp UP_ARROW     &kp N6    &kp N7        &kp N8                &kp N9         &kp N0     &kp MINUS
-&kp LANG2             &kp Q     &kp W          &kp E                  &kp R         &kp T                &kp DOWN_ARROW   &kp Y     &kp U         &kp I                 &kp O          &kp SEMI   &kp EQUAL
-&kp LCTRL             &kp A     &hrml LCTRL S  &hrml LWIN D           &hrml LALT F  &kp G                &kp LEFT_ARROW   &kp H     &hrmr LALT J  &hrmr RWIN K          &hrmr RCTRL L  &kp P      &kp APOS
-&tolayer_on_hold 1 0  &kp Z     &kp X          &kp C                  &kp V         &kp B                &kp RIGHT_ARROW  &kp N     &kp M         &kp COMMA             &kp DOT        &kp FSLH   &mo 9
-&kp C_MUTE            &kp LWIN  &lt 7 ESC      &lshft_mt LSHFT SPACE  &kp TAB       &lalt_to_numlayer    &kp ENTER        &kp LEFT  &kp ENTER     &rshft_mt RSHFT BSPC  &lt 7 RALT     &kp RIGHT
+&kp GRAVE   &kp N1    &kp N2         &kp N3                 &kp N4        &kp N5               &kp UP_ARROW     &kp N6    &kp N7        &kp N8                &kp N9         &kp N0     &kp MINUS
+&kp LANG2   &kp Q     &kp W          &kp E                  &kp R         &kp T                &kp DOWN_ARROW   &kp Y     &kp U         &kp I                 &kp O          &kp SEMI   &kp EQUAL
+&kp LCTRL   &kp A     &hrml LCTRL S  &hrml LWIN D           &hrml LALT F  &kp G                &kp LEFT_ARROW   &kp H     &hrmr LALT J  &hrmr RWIN K          &hrmr RCTRL L  &kp P      &kp APOS
+&to 1       &kp Z     &kp X          &kp C                  &kp V         &kp B                &kp RIGHT_ARROW  &kp N     &kp M         &kp COMMA             &kp DOT        &kp FSLH   &mo 9
+&kp C_MUTE  &kp LWIN  &lt 7 ESC      &lshft_mt LSHFT SPACE  &kp TAB       &lalt_to_numlayer    &kp ENTER        &kp LEFT  &kp ENTER     &rshft_mt RSHFT BSPC  &lt 7 RALT     &kp RIGHT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
