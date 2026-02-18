@@ -40,7 +40,7 @@ layers:
   - {t: I, h: '$$mdi:apple-keyboard-control$$'}
   - O
   - {t: '''', s: '"'}
-  - {t: GLOBE, h: qwerty}
+  - {t: '&to_qwerty_w_globe GLOBE', h: GLOBE}
   - Z
   - X
   - C
@@ -105,7 +105,7 @@ layers:
   - {t: I, h: '$$mdi:apple-keyboard-control$$'}
   - O
   - {t: '''', s: '"'}
-  - {t: '$$mdi:minus-circle-outline$$', h: qwert_w}
+  - {t: qwert_w, h: toggle}
   - Z
   - X
   - C
@@ -170,7 +170,7 @@ layers:
   - {t: L, h: '$$mdi:apple-keyboard-control$$'}
   - P
   - {t: '''', s: '"'}
-  - {t: GLOBE, h: base}
+  - {t: '&to_base_w_globe GLOBE', h: GLOBE}
   - Z
   - X
   - C
@@ -235,7 +235,7 @@ layers:
   - {t: L, h: '$$mdi:apple-keyboard-control$$'}
   - P
   - {t: '''', s: '"'}
-  - {t: '$$mdi:minus-circle-outline$$', h: win}
+  - {t: win, h: toggle}
   - Z
   - X
   - C
