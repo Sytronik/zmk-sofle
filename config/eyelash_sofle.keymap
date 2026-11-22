@@ -304,7 +304,7 @@
         };
 
         ipad {
-            display-name = "base";
+            display-name = "ipad";
             bindings = <
 &kp GRAVE                             &kp N1    &kp N2         &kp N3                 &kp N4        &kp N5               &kp UP_ARROW     &kp N6    &kp N7        &kp N8                &kp N9             &kp N0     &kp MINUS
 &kp LA(ENTER)                         &kp Q     &kp W          &kp F                  &kp P         &kp B                &kp DOWN_ARROW   &kp J     &kp L         &kp U                 &kp Y              &kp SEMI   &kp EQUAL
@@ -343,7 +343,7 @@
         };
 
         sero2 {
-            display-name = "qwerty";
+            display-name = "sero2";
             bindings = <
 &kp GRAVE                            &kp N1    &kp N2         &kp N3                 &kp N4        &kp N5               &kp UP_ARROW     &kp N6    &kp N7        &kp N8                &kp N9             &kp N0     &kp MINUS
 &kp LA(ENTER)                        &kp V     &kp F          &kp E                  &kp G         &kp LS(T)            &kp DOWN_ARROW   &kp Y     &kp N         &kp P                 &kp O              &kp SEMI   &kp EQUAL
