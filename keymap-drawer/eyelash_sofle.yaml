@@ -63,7 +63,7 @@ layers:
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: 'Sft+$$mdi:keyboard-space$$', h: sy-na_w}
+  - {t: 'Sft+$$mdi:keyboard-space$$', h: sym-nav}
   - $$mdi:arrow-right-bold$$
   win:
   - {t: '`', s: '~'}
@@ -193,7 +193,7 @@ layers:
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: 'Sft+$$mdi:keyboard-space$$', h: sy-na_w}
+  - {t: 'Sft+$$mdi:keyboard-space$$', h: sym-nav}
   - $$mdi:arrow-right-bold$$
   qwerty:
   - {t: '`', s: '~'}
@@ -258,7 +258,7 @@ layers:
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: 'Sft+$$mdi:keyboard-space$$', h: sy-na_w}
+  - {t: 'Sft+$$mdi:keyboard-space$$', h: sym-nav}
   - $$mdi:arrow-right-bold$$
   qwert_w:
   - {t: '`', s: '~'}
@@ -388,7 +388,7 @@ layers:
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: 'Sft+$$mdi:keyboard-space$$', h: sy-na_w}
+  - {t: 'Sft+$$mdi:keyboard-space$$', h: sym-nav}
   - $$mdi:arrow-right-bold$$
   sym-nav:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -453,7 +453,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:backspace-reverse-outline$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   sy-na_w:
   - {t: '$$mdi:transfer$$', type: trans}
